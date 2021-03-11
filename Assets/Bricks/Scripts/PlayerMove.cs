@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player : MonoBehaviour
+public class PlayerMove : MonoBehaviour
 {
     public float Speed=1.0f;
     public string EjeH="Horizontal";
@@ -11,12 +11,15 @@ public class Player : MonoBehaviour
     void Start(){
         rb2D=GetComponent<Rigidbody>();
     }
-    void FixedUpdate(){
+    #region Old Input
+   /* void FixedUpdate(){
         float H=Input.GetAxis(EjeH);
         Vector3 Move=new Vector3(H,transform.position.y,transform.position.z) 
         *Speed*Time.fixedDeltaTime;
         rb2D.velocity=Move;
         
         
-    }
+    }*/
+    #endregion
+
 }
