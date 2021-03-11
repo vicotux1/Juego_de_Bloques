@@ -6,9 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Bricks/Scenes/Main_menu_pc.unity
+    path: Assets/Bricks/Scenes/Mainmenu.unity
     guid: a3a2a4ea5a4ce0a199b959a9245b0a78
   - enabled: 1
-    path: Assets/Bricks/Scenes/001_Pc.unity
+    path: Assets/Bricks/Scenes/001.unity
     guid: 1b149f771c2cafae591f16a24d976f05
   m_configObjects: {}
