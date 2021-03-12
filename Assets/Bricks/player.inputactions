@@ -7,15 +7,15 @@
             "actions": [
                 {
                     "name": "Axis",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "83135ea4-9cb4-4b28-a091-da66977597bc",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Axis",
                     "processors": "",
                     "interactions": ""
                 },
                 {
                     "name": "fire",
-                    "type": "Button",
+                    "type": "PassThrough",
                     "id": "946e1cdc-fb44-439b-8826-e6efa09856eb",
                     "expectedControlType": "Button",
                     "processors": "",
@@ -24,8 +24,8 @@
             ],
             "bindings": [
                 {
-                    "name": "Horizontal",
-                    "id": "a7da20a0-c0bb-47c6-84e9-3c9562be87da",
+                    "name": "movement",
+                    "id": "fe6030b3-77c3-4c0a-9fc8-7ec2d9d13405",
                     "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
@@ -35,42 +35,9 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "negative",
-                    "id": "46102029-74f7-46d8-8d34-fdf6d918039b",
-                    "path": "<Keyboard>/d",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "keyboard",
-                    "action": "Axis",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "4aaefdf5-f32f-4f54-963f-7129e229fc79",
-                    "path": "<Keyboard>/a",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "keyboard",
-                    "action": "Axis",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Horizontal",
-                    "id": "c727fc7e-fd8a-426f-9690-8ea9ddcac71e",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "keyboard",
-                    "action": "Axis",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "c01f67d6-6be4-403e-9b96-d4825eb0f596",
-                    "path": "<Gamepad>/dpad/left",
+                    "name": "Negative",
+                    "id": "d3c4de98-17ad-4cf8-b7f2-d13c9ffd28f9",
+                    "path": "<Gamepad>/dpad/up",
                     "interactions": "",
                     "processors": "",
                     "groups": "gamepad",
@@ -79,63 +46,8 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
-                    "id": "25da537c-a225-455c-8598-01e76069759d",
-                    "path": "<Gamepad>/dpad/right",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "gamepad",
-                    "action": "Axis",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Vertical",
-                    "id": "b6ab0505-149a-4c0c-b88d-bb8d79fd7236",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "keyboard",
-                    "action": "Axis",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "bd25735a-cec3-47a5-b3f3-ee246e80189c",
-                    "path": "<Keyboard>/s",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "keyboard",
-                    "action": "Axis",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "positive",
-                    "id": "22985e89-efc1-4c46-a1be-05deddeb8065",
-                    "path": "<Keyboard>/w",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "keyboard",
-                    "action": "Axis",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Vertical",
-                    "id": "b807c6da-224f-48ed-bac7-36a228fdced8",
-                    "path": "1DAxis",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "keyboard",
-                    "action": "Axis",
-                    "isComposite": true,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "negative",
-                    "id": "9f19717d-7ea0-429f-8f2e-4bc2cd153cec",
+                    "name": "Positive",
+                    "id": "0ab6a01d-d5d6-4b75-a96b-dd7bc05e8ded",
                     "path": "<Gamepad>/dpad/down",
                     "interactions": "",
                     "processors": "",
@@ -145,12 +57,67 @@
                     "isPartOfComposite": true
                 },
                 {
-                    "name": "positive",
-                    "id": "ddd3a136-6f40-4aa8-a9ad-b82442a09963",
-                    "path": "<Gamepad>/dpad/up",
+                    "name": "movement",
+                    "id": "dce9cfb4-e6ee-4f0e-bb24-d81e857d7206",
+                    "path": "1DAxis",
                     "interactions": "",
                     "processors": "",
                     "groups": "gamepad",
+                    "action": "Axis",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Negative",
+                    "id": "2dab415c-3104-44bf-aaf2-b81d6b573f81",
+                    "path": "<Gamepad>/rightStick/up",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "gamepad",
+                    "action": "Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "6f72440d-0a4c-4d48-bda3-4f23fdc5324e",
+                    "path": "<Gamepad>/leftStick/down",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "gamepad",
+                    "action": "Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "movement",
+                    "id": "224d3de9-6a77-42e4-af5e-8c66d8087556",
+                    "path": "1DAxis",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "gamepad",
+                    "action": "Axis",
+                    "isComposite": true,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "Negative",
+                    "id": "083a43c7-1d3c-41d1-9779-1c91d1d78b5e",
+                    "path": "<Keyboard>/w",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
+                    "action": "Axis",
+                    "isComposite": false,
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "Positive",
+                    "id": "eb19c66c-4125-487d-ba93-aae3699b26c1",
+                    "path": "<Keyboard>/s",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "keyboard",
                     "action": "Axis",
                     "isComposite": false,
                     "isPartOfComposite": true
