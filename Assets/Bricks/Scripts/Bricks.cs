@@ -13,7 +13,7 @@ public class Bricks : MonoBehaviour{
 		if (other.gameObject.CompareTag(tag_Ball)) 
 		{
 		Destroy (this.gameObject);
-        GameManager.gameManager.AddPoint(BrickValue);
+        //GameManager.gameManager.AddPoint(BrickValue);
 
 
 		}

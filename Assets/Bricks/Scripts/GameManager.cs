@@ -2,65 +2,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using UnityEngine.SceneManagement;
-using TMPro;
 #endregion
+#region GameStates
+public enum GameState{
+    inGame, pause, gameOver
+}
+#endregion
+
 public class GameManager : MonoBehaviour{
-#region Singleton 
-public static GameManager gameManager;
-private void Awake() {
-    Life= 10;
-    if (gameManager!=null){
+    
+#region Asignaciones previas
+    public static GameManager gameManager;
+     public static GameManager GM_Lives;
+    public static int lives=3;
+    public static int Hearts=1;
+    public static int Points=0;
+    public GameState currentGameState;
+#endregion
+
+#region metodos extras
+    public void StartGame(){
+        currentGameState=GameState.inGame;
+        Time.timeScale = Time.timeScale == 0 ? 1: 0;
+    }
+    public void PauseGame(){
+        currentGameState=GameState.pause;
+        Time.timeScale = Time.timeScale == 0 ? 1: 0;
+    }
+    public void GameOver(){
+        currentGameState=GameState.gameOver;
+        Time.timeScale = 0; 
+    }
+#endregion
+
+#region singleton
+    void Awake() {
+    Singleton();
+    }
+    
+    
+    void Singleton(){
+        if (gameManager!=null){
     Destroy(this.gameObject);      
-    }else{
-        gameManager=this;}
-    }
-#endregion
-#region Public Variables 
-public int Life= 3;
-public string Next_Scene="001";
-public TextMeshProUGUI Points,Lives,ganastes;
-#endregion
-#region Private Variables
-private int Point=0;
-#endregion
-#region Funtion privates Unity
-void Start(){
-        ganastes.text=" ";
-        Points.text="Point:0";
-        Lives.text="Lives: "+ Life;
-    }
-void Update(){
-        Points.text="Point: ";
-        Lives.text="Lives: "+Life;
-        Points.text="Point: "+ Point;
-    }
+    }else{ gameManager=this;}
+        }
 #endregion    
-#region Funtion publics Creates
-public void AddPoint(int Value){
-        Point=Point+Value;
-    }
-public void LifeCoint(){
-        Life=Life-1;
-        if(Life==0){
-        StartCoroutine(Starting(2.0f));
-        }else if(Life>=0){
-         StartCoroutine(NewBall(1.0f));   
-        }
-    }
-IEnumerator Starting(float waitTime){
-    while (true){ganastes.text="Perdiste";
-    yield return new WaitForSeconds(waitTime);
-	SceneManager.LoadScene (Next_Scene);
-        }
-    }
-IEnumerator NewBall(float Time){
-    while (true){
-    ganastes.text="lives:"+Life.ToString();
-    yield return new WaitForSeconds(Time);
-    ganastes.text=" ";
-        } 
-    }
-  }  
-#endregion
+}    
+

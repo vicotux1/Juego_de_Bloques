@@ -5,19 +5,20 @@ using UnityEngine;
 public class Ball : MonoBehaviour{
     Rigidbody rb2D;
     public float fuerzaDisparo;
-    bool IsGame=false;
+    bool IsGame;
     public Vector3 Position_initial;
 
     void Start(){
         rb2D=GetComponent<Rigidbody>();
         transform.position=Position_initial;
+        IsGame=false;
         
     }
     void Update(){
             Shoot();
     }
     public void Shoot(){
-        if(!IsGame && Input.GetButtonDown("Fire1")){
+        if(IsGame=false && Input.GetButtonDown("Fire1")){
        IsGame=true;
        transform.SetParent(null);
        rb2D.isKinematic=false;
@@ -30,7 +31,7 @@ public class Ball : MonoBehaviour{
         //StartCoroutine(Starting(0.5f)); 
         rb2D.velocity=Vector3.zero;
         transform.position=Position_initial;
-        GameManager.gameManager.LifeCoint();
+        //GameManager.gameManager.LifeCoint();
         IsGame=false;
         Shoot();
 		}

@@ -2166,8 +2166,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 268c60a0b6049fb9ba1bd4f5fd24806d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Life: 3
-  Next_Scene: 001
+  Life: 10
+  Next_Scene: Mainmenu
   Points: {fileID: 1695127948}
   Lives: {fileID: 60076708}
   ganastes: {fileID: 5012787291564352808}
