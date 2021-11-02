@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4822330130931750255}
   - component: {fileID: 4822330130931750252}
   m_Layer: 0
-  m_Name: ball_prefab
+  m_Name: ball
   m_TagString: Ball
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -49,6 +49,7 @@ SpriteRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -97,7 +98,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fuerzaDisparo: 700
-  Position_initial: {x: -5, y: 0.1, z: 0}
+  ShootButton: Jump
+  tag_ground: Ground
+  Position_initial: {x: 0, y: -5.4, z: 0}
 --- !u!54 &4822330130931750255
 Rigidbody:
   m_ObjectHideFlags: 0

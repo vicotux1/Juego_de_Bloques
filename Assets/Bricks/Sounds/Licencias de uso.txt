@@ -1,17 +1,4 @@
 --------------------------------------------------------------------------------------------
-Assets utilizados en el tutorial "Bloques!"
---------------------------------------------------------------------------------------------
-
-Publicado en el canal de Youtube: 
-Hagamos Videojuegos
-
-URL del tutorial: 
-https://www.youtube.com/playlist?list=PLREdURb87ks3iypIlK-4RyW3ek6gXwEf7
-
-URL de mi canal de Youtube: 
-http://www.youtube.com/juande
-
---------------------------------------------------------------------------------------------
 
 Fonts:
 
@@ -41,5 +28,4 @@ Sprites:
 
 [Creative Commons 0 License] http://creativecommons.org/publicdomain/zero/1.0/
 
-Los hice yo mismo, así que podéis usarlos para lo que queráis.
 
