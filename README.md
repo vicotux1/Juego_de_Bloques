@@ -4,7 +4,7 @@ Clon de juego tipo BreakOUT.
 * Escribí todos los scripts desde cero para usar los principios SOLID.
 
 
-(![(portada)](https://github.com/vicotux1/Juego_de_Bloques/blob/01BrickOUT!/Assets/Bricks/Gr%C3%A1ficos/00.png))
+![(portada)](https://github.com/vicotux1/Juego_de_Bloques/blob/01BrickOUT!/Assets/Bricks/Gr%C3%A1ficos/00.png)
 
 Fonts:
 
@@ -40,6 +40,6 @@ Hit da Bola - Tissman (https://freesound.org/people/Tissman/)
 
 Sprites:
 
-Puzzle game graphics by Kenney Vleugels (www.kenney.nl) | https://kenney.nl/assets/puzzle-pack
+Puzzle game graphics by Kenney Vleugels Creative Commons 0 License | https://kenney.nl/assets/puzzle-pack
 
 
