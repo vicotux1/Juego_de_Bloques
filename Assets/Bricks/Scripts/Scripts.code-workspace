@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "..\\..\\..\\..\\..\\ManPac\\Assets\\Forest_Guard\\Scripts"
+		}
+	],
+	"settings": {
+		"cSpell.ignoreWords": [
+			"Jugador",
+			"Musicvol",
+			"volumen"
+		]
+	}
+}

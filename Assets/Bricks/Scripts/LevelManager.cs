@@ -7,7 +7,7 @@ using TMPro;
 
 public class LevelManager : MonoBehaviour{
     public int Life=3, lifeRest= 1, lifeGameOver=0;
-
+    public float waitTimePerdiste, newBall;
     public int Score=0;
     public string Next_Scene="001";
     public TextMeshProUGUI Points,Lives,ganastes;
@@ -28,13 +28,16 @@ public class LevelManager : MonoBehaviour{
 #endregion
 
 #region Funtion publics Creates
+
+public void lifes(){
+        Life--;
+        LifeCoint();
+    }
 public void LifeCoint(){
-        
-        Life=Life-lifeRest;
         if(Life==lifeGameOver){
-        StartCoroutine(Starting(2.0f));
+        StartCoroutine(Starting(waitTimePerdiste));
         }else if(Life>=0){
-         StartCoroutine(NewBall(1.0f));   
+         StartCoroutine(NewBall(newBall));   
         }
     }
 IEnumerator Starting(float waitTime){
